@@ -1,0 +1,18 @@
+{
+  "name": "nudge",
+  "version": "0.1.0",
+  "description": "Nudge Messenger - XMPP Client",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "elm": "elm make Main.elm --output elm.js || true",
+    "elm:watch": "chokidar '**/*.elm' -c 'npm run elm'",
+    "start": "electron main.js",
+    "watch": "npm run start & npm run elm:watch & wait"
+  },
+  "author": "Joseph HEBTING - johebting@gmail.com",
+  "license": "AGPL-3.0",
+  "devDependencies": {
+    "chokidar": "^1.6.1"
+  }
+}
